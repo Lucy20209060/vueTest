@@ -25,7 +25,7 @@
 </template>
 
 <script>
-
+import randomRuleString from 'random-rule-string'
 export default {
     name: 'test',
     data () {
@@ -35,6 +35,8 @@ export default {
     },
     mounted(){
         // this.interval();
+
+        console.log(randomRuleString())
 
         function deepTraversal(node, list=[]) {
             var children = node.children;
